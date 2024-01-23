@@ -12,6 +12,7 @@ const getComments = async (req, res) => {
 
     const result = await Comment.find({
       blogId: blogId,
+      action: "2",
     });
 
     res.status(201).json({ data: result });

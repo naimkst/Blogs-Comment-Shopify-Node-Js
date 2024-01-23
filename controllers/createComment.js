@@ -46,7 +46,7 @@ const createComment = async (req, res) => {
       name,
       email,
       comment,
-      action,
+      action: "1",
     });
 
     res.status(201).json({
